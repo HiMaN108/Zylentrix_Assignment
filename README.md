@@ -41,17 +41,30 @@ This project is built using the following technologies:
      - **Update a user**
      - **Delete a user**
 
-## Running the Application
-1. **Start the server** in development mode using:
-   ```sh
-   npm run start
-   ```
 
 
-## Testing with Postman API
-Once the server is running, we can test the API endpoints using Postman. Here's a quick overview of the available endpoints:
 
-POST /api/users Register a new user.
-GET /api/users  Get the all users
-PUT /api/users/:id  fetching the single user from user ID
-DELTE /api/users/:id deleting the single user form user ID
+### Running the Application
+
+1. ## Start the server in development mode using:
+```
+
+ npm run dev
+```
+2. ## The API will be accessible at http://localhost:<PORT> (as set in .env).
+
+### Testing the API Endpoints
+
+Once the server is running, we can test the API endpoints using Postman. Below is an overview of the available endpoints:
+
+***API Endpoints***
+
+POST  ***/api/users*** – Register a new user.
+
+GET ***/api/users*** – Retrieve all users.
+
+GET ***/api/users/:id*** – Fetch a single user by their ID.
+
+PUT ***/api/users/:id*** – Update a specific user's details using their ID.
+
+DELETE ***/api/users/:id*** – Delete a user using their ID.
